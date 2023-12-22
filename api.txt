@@ -1,0 +1,2 @@
+api key= 256156d28a4575e841a3cce2fdfc060b
+api call =https://api.openweathermap.org/data/2.5/weather?q={city name}&units=Metric&appid={API key}
