@@ -1,10 +1,13 @@
 .container {
   background-color: #B2A59B;
-  width: 610px;
+  width: 90%;
+  max-width: 610px;
+  padding: 20px;
   height: 830px;
   margin: auto;
   margin-top: 80px;
   border-radius: 15px;
+  box-sizing: border-box;
 }
 .top-bar {
   display: flex;
@@ -77,4 +80,15 @@
 }
 .icon{
     margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .top-bar {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    padding-top: 20px;
+    align-items: stretch;
+  }
+  .top-bar input {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
 }

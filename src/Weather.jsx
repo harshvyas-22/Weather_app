@@ -61,7 +61,7 @@ const Weather = () => {
         </div>
       </div>
       <div className="weather-img">
-        <img src={cloud_icon} alt="" />
+        <img src={wicon} alt="" />
       </div>
       <div className="weather-temp">24&#x2103; </div>
       <div className="weather-location">Jhansi</div>
