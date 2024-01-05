@@ -46,11 +46,17 @@ const Weather = () => {
     } else {
       setWicon(clear_icon);
     }
+    element[0].value="";
+    
   };
   return (
     <div className="container">
       <div className="top-bar">
-        <input type="text" className="cityInput" placeholder="Search" />
+        <input type="text" className="cityInput" placeholder="Search" 
+        onKeyDown={((event) => {
+          if (event.key === "Enter") {
+            search();
+          }})}/>
         <div
           className="search-icon"
           onClick={() => {
